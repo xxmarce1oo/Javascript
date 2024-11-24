@@ -7,8 +7,7 @@
     <title>Document</title>
     <style>
         .container {
-            width: 100%;
-            height: 200px;
+            height: 100vh;
             justify-content: center;
             display: flex;
             align-items: center;
@@ -19,15 +18,34 @@
             display: flex;
             align-items: center;
         }
+        #foto {
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-    <div class="box">
-        <h1>Marcelo</h1>
+        <div class="box">
+            <h1 id="marcelo">Marcelo</h1>
+            <br>
+            <h7 style="display: none;" id="hannah">te amo hannah ! <img id="foto" src="nos.jpg" alt=""></h7>
+            <script src="hannah.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    let texto = document.getElementById("hannah");
+                    let marcelo = document.getElementById("marcelo");
+                    marcelo.onmouseover = function() {
+                        texto.style.display = "block";
+                    };
+                    marcelo.onmouseout = function() {
+                        texto.style.display = "none";
+                    };
+                });
+            </script>
+        </div>
     </div>
-</div>
 </body>
 
 </html>
