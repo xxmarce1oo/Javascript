@@ -34,15 +34,11 @@
 <body>
     <div class="container">
         <div class="box">
-            <h1 style="user-select: none; color: aliceblue;" onclick="adicionaTexto()" id="marcelo">Eu amo a Hannah?</h1>
+            <h1 style="user-select: none; color: aliceblue;" onmousemove="adicionaTexto()" id="marcelo">Eu amo a Hannah?</h1>
         </div>
         <p style="color: red;" id="resposta" ></p>
     </div>
-    <script>
-        function adicionaTexto(){
-            let resposta = document.getElementById("resposta");
-            resposta.append(' te amo hannah !');
-        }
+    <script src="mouse.js">
     </script>
 </body>
 
