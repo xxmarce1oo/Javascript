@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box {
+            width: 25%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            background-color: lightgreen;
+            border-radius: 10px;
+            box-shadow: inset 0 0 4px #000000;
+        }
+        #marcelo {
+            cursor: pointer;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 style="user-select: none; color: aliceblue;" onclick="adicionaTexto()" id="marcelo">Eu amo a Hannah?</h1>
+        </div>
+        <p style="color: red;" id="resposta" ></p>
+    </div>
+    <script>
+        function adicionaTexto(){
+            let resposta = document.getElementById("resposta");
+            resposta.append(' te amo hannah !');
+        }
+    </script>
+</body>
+
+</html>
